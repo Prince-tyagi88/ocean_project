@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Indian Ocean Visualizer</title>
+</head>
+
+<body>
+
+    <div id="ui">
+
+        <h1>Indian Ocean Visualizer</h1>
+
+        <label>
+            Parameter
+        </label>
+
+        <select id="parameter">
+
+            <option value="temperature">
+                Temperature
+            </option>
+
+            <option value="salinity">
+                Salinity
+            </option>
+
+            <option value="current">
+                Current
+            </option>
+
+            <option value="waves">
+                Significant Wave Height
+            </option>
+
+        </select>
+
+
+        <label>
+            Date
+        </label>
+
+        <input
+            id="date"
+            type="date"
+            value="2025-01-01"
+        />
+
+
+        <label>
+            Depth
+        </label>
+
+        <select id="depth">
+
+            <option value="0.494">
+                ~0.5 m
+            </option>
+
+            <option value="1.541">
+                ~1.5 m
+            </option>
+
+            <option value="2.646">
+                ~2.6 m
+            </option>
+
+            <option value="3.819">
+                ~3.8 m
+            </option>
+
+        </select>
+
+
+        <button id="load">
+            Load Data
+        </button>
+
+
+        <div id="status">
+            Ready
+        </div>
+
+    </div>
+    <div id="legend" class="legend">
+
+    <div id="legend-title">
+        Temperature
+    </div>
+
+    <div class="legend-gradient"></div>
+
+    <div class="legend-values">
+        <span id="legend-min">0</span>
+        <span id="legend-max">1</span>
+    </div>
+
+    <div id="legend-unit">
+        °C
+    </div>
+
+</div>
+<div id="point-info" class="point-info">
+    <div class="point-info-title">Ocean Data</div>
+
+    <div id="point-location">Click the ocean</div>
+    <div id="point-value">—</div>
+</div>
+
+
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
